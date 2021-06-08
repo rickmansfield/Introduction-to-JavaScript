@@ -190,7 +190,7 @@ function game(user, computer){
     }else if (user == 'scissors' && computer == 'paper') {
       return 'you win!';
     }else if (user == 'scissors' && computer == 'scissors') {
-      return `It's a tie`;
+      return `it's a tie`;
     }
 }
   
