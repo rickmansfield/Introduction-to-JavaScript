@@ -16,10 +16,22 @@ Do the following:
    2. Console log true if age is 18 or higher
 
    HINT: no function required
+   let votingAge = 21;
+
+if (votingAge > 17){
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+
 */
-
-
-
+const votingAge = 18;
+if (votingAge >= 18) {
+  console.log('task 1 a:', true);
+} else {
+  console.log(`task 1 a:`, false );
+}
+console.log('LOOK xxxxxxxxxxxxxxxxxx');
 /*
 Task 1b - Values
 
@@ -31,7 +43,14 @@ Do the following:
    HINT: no function required
 */
 
+let gender = 'male';
+let accessory = 'dress';
 
+if (accessory !== 'tie'){
+  gender = 'female';
+}
+
+console.log('task 1 b:', gender);
 
 
 
@@ -45,6 +64,8 @@ Do the following:
 
    HINT: look up the Number method
 */
+const date = "1999"; 
+console.log('task 1c:', Number(date));
 
 
 
@@ -61,7 +82,7 @@ Do the following:
 function multiply(a, b){
     return a*b;
   }
-  console.log(multiply(1,3));
+  console.log('task 1d', multiply(1,3));
 
 
 
@@ -75,9 +96,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(humanYears){
+    return humanYears*7;
 }
+dogYears(7);
 
 
 
@@ -116,14 +138,16 @@ function hungryDog(weight, age){
     }else if (age>=1 && weight >= 11 && weight <= 15) {
       return weight * 0.03;
     }else if (age >= 1 && weight >15){
-      test('', () => {
-        
-      });
-      
-
+      return weight * 0.04;
+    } else if(age < 1 && age >=0.583){
+      return weight * 0.4;
+    }else if(age <0.583 && age >=0.33){
+      return weight * 0.05;
+    }else if (age <0.33 && age >=0.16) {
+      return weight * 0.10;
     }
   }
-  
+  hungryDog(90, 8);
 
 
 
@@ -149,10 +173,28 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+    if (user == 'rock' && computer == 'scissors'){
+      return 'you win!';
+    }else if (user == 'rock' && computer == 'paper') {
+      return 'you lose!';
+    } else if (user == 'rock' && computer == 'rock') {
+      return `it's a tie`;
+    }else if (user == 'paper' && computer == 'scissors') {
+      return 'you lose!';
+    }else if (user == 'paper' && computer == 'paper'){
+      return `it's a tie`;
+    } else if (user == 'paper' && computer == 'rock') {
+      return 'you lose!';
+    }else if (user == 'scissors' && computer == 'rock') {
+      return 'you lose!';
+    }else if (user == 'scissors' && computer == 'paper') {
+      return 'you win!';
+    }else if (user == 'scissors' && computer == 'scissors') {
+      return `It's a tie`;
+    }
 }
   
-  
+  game(rock, rock);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
