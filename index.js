@@ -273,7 +273,7 @@ function grade(score){
   }
   console.log('task 7 RICK', grade(100));
   
-  
+  console.log('task 7 RICK', grade(90));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -287,8 +287,8 @@ Using the vowelCounter function below do the following:
   HINT - try looking up the .includes() method
 */
 
-
-function vowelCounter(/*add your code here*/) {
+// will try this after studinging tomorrows content
+function vowelCounter(string) {
     /*add your code here*/
 }
 
